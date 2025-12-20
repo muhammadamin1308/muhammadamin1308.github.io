@@ -1,10 +1,13 @@
+import About from "../components/About"
+import Hero from "../components/Hero"
 import Navigation from "../components/Navigation"
 
 const Index = () => {
   return (
     <>
     <Navigation />
-    <h1>Index</h1>
+    <Hero />
+    <About />
     </>
   )
 }

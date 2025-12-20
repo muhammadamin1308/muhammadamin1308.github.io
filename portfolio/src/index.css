@@ -1,15 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
+
+.neon-text {
+  color: white;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 90px #fff,
+    0 0 100px #fff,
+    0 0 150px #fff;
+}
+
+h1, .logo-font {
+  font-family: 'Rubik 80s Fade', system-ui, sans-serif;
+}
+
+.shadow {
+  box-shadow: 0px -0.8px 1.1px hsl(0deg 0% 0% / 0.13),
+    -0.1px -13.6px 19.3px -0.1px hsl(0deg 0% 0% / 0.29),
+    -0.2px -25.7px 36.4px -0.2px hsl(0deg 0% 0% / 0.45),
+    -0.4px -42.6px 60.4px -0.3px hsl(0deg 0% 0% / 0.6),
+    -0.6px -69.5px 98.5px -0.4px hsl(0deg 0% 0% / 0.76),
+    -1px -111.8px 158.5px -0.5px hsl(0deg 0% 0% / 0.92);
+}
+
+.inset-shadow {
+  box-shadow: inset 1px -1px 1.6px hsl(0deg 0% 59% / 0.63),
+    inset 9.9px -9.9px 15.4px -0.7px hsl(0deg 0% 59% / 0.61),
+    inset 24.2px -24.2px 37.7px -1.3px hsl(0deg 0% 59% / 0.6),
+    inset 54.2px -54.2px 84.5px -2px hsl(0deg 0% 59% / 0.58),
+    inset 110px -110px 171.5px -2.7px hsl(0deg 0% 59% / 0.57);
+}
+
 
