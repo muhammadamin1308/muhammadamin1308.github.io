@@ -1,17 +1,18 @@
-import About from "../components/About"
-import HeroDown from "../components/HeroDown"
-import HeroUp from "../components/HeroUp"
-import Navigation from "../components/Navigation"
+import About from "../components/about";
+import HeroDown from "../components/heroDown";
+import HeroUp from "../components/heroUp";
+import Navigation from "../components/Navigation";
 
 const Index = () => {
   return (
     <>
-    <Navigation />
-    <HeroUp />
-    <HeroDown />
-    <About />
+      <Navigation />
+      <HeroUp />
+      <HeroDown />
+      <About />
+      <About />
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

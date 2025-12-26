@@ -61,7 +61,7 @@ function App() {
         });
       };
 
-      // Observer for wheel/touch events
+      // Observer for wheel/touch events — enabled only while within first 3 viewports
       const obs = Observer.create({
         type: "wheel,touch",
         wheelSpeed: -1,
@@ -75,7 +75,25 @@ function App() {
         preventDefault: true
       });
 
+      const checkObserverToggle = () => {
+        const withinFirstThree = window.scrollY < window.innerHeight * 2;
+        try {
+          if (withinFirstThree && typeof obs.enable === 'function') {
+            obs.enable();
+          } else if (!withinFirstThree && typeof obs.disable === 'function') {
+            obs.disable();
+          }
+        } catch (e) {
+          console.log(e)
+        }
+      };
+
+      // set initial observer state and update on scroll
+      checkObserverToggle();
+      window.addEventListener('scroll', checkObserverToggle, { passive: true });
+
       return () => {
+        window.removeEventListener('scroll', checkObserverToggle);
         obs.kill();
       };
     }, 100);

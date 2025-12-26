@@ -10,7 +10,7 @@ const Loading = () => {
   useEffect(() => {
     if (textRef.current) {
       gsap.to(textRef.current, {
-        duration: 4,
+        duration: 3,
         text: "Look up. That's where infinity begins.",
         ease: "none",
         repeat: -1,
