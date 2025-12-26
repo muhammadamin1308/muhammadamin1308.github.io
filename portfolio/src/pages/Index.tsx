@@ -1,12 +1,14 @@
 import About from "../components/About"
-import Hero from "../components/Hero"
+import HeroDown from "../components/HeroDown"
+import HeroUp from "../components/HeroUp"
 import Navigation from "../components/Navigation"
 
 const Index = () => {
   return (
     <>
     <Navigation />
-    <Hero />
+    <HeroUp />
+    <HeroDown />
     <About />
     </>
   )
