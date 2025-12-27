@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import gsap from "gsap";
 const HeroDown = () => {
 
   return (
@@ -10,12 +10,20 @@ const HeroDown = () => {
             Frontend-focused, backend-capable — building scalable interfaces,
             APIs, and real-world systems with React
           </p>
-          <Link
-            to="#about"
-            className=" inset-shadow px-8 py-3 bg-[#4254bd] hover:bg-[#3444a8] rounded-lg text-white font-medium transition-colors"
-          >
-            View My Work
-          </Link>
+            <a
+              href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                gsap.to(window, {
+                  scrollTo: { y: "#projects", autoKill: false },
+                  duration: 1,
+                  ease: "power2.inOut",
+                });
+              }}
+              className=" inset-shadow  px-8 py-3 bg-[#4254bd] hover:bg-[#3444a8] rounded-full text-white font-medium transition-colors"
+            >
+              View My Work
+            </a>
         </div>
       </div>
     </section>

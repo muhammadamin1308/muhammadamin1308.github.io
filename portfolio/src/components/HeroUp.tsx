@@ -68,7 +68,7 @@ const HeroUp = () => {
       <button
         aria-label="Scroll down"
         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
-        className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-10 h-12 rounded-ful text-white backdrop-blur-sm transition-opacity duration-300 ${
+        className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-10 h-12 rounded-full text-white backdrop-blur-sm transition-opacity duration-300 ${
           showScrollIcon ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
