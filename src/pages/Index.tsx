@@ -1,7 +1,7 @@
-import About from "../components/about";
+import About from "../components/About";
 import Projects from "../components/projects";
-import HeroDown from "../components/heroDown";
-import HeroUp from "../components/heroUp";
+import HeroDown from "../components/HeroDown";
+import HeroUp from "../components/HeroUp";
 import Navigation from "../components/Navigation";
 import ContactMe from "../components/contact-me";
 
