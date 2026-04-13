@@ -57,6 +57,14 @@ const Navigation = () => {
           } lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto absolute lg:relative top-full lg:top-auto left-0 lg:left-auto right-0 lg:right-auto bg-black/95 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none border-t lg:border-t-0 border-gray-800 lg:border-0 transition-all duration-300 ease-in-out flex flex-col lg:flex-row w-full lg:w-auto py-4 lg:py-0 gap-1 lg:gap-6`}
         >
           <li className="group transition-colors">
+            <Link
+              to="/blog"
+              className={`text-lg block py-2 px-3 group-hover:text-[#4254bd] ${isScrolled ? 'text-white' : 'text-gray-600'} duration-500`}
+            >
+              Blog
+            </Link>
+          </li>
+          <li className="group transition-colors">
             <a
               href="/Muhammadamin_Sharifjonov_CV.pdf"
               download

@@ -76,7 +76,7 @@ const About = () => {
 
                 {/* Telegram */}
                 <a
-                  href="@Disnotdewrst"
+                  href="https://t.me/Disnotdewrsts"
                   aria-label="Telegram"
                   className="w-9 h-9 flex items-center justify-center rounded-full transition-opacity hover:opacity-80"
                 >

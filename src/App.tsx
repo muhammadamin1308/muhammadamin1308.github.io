@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Index from './pages/Index'
 import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Loading from './components/Loading'
 
 
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Index />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/blog/:slug' element={<BlogPost />} />
         </Routes>
       </div>
     </BrowserRouter>
